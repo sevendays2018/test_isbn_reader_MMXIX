@@ -2,7 +2,17 @@
 <head><title>Test</title>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/quagga/0.12.1/quagga.min.js"></script>
 
-<script type="text/javascript">
+
+</head>
+<body>
+<form>
+    <div class="input-field">
+        <label for="isbn_input">EAN:</label>
+        <input id="isbn_input" class="isbn" type="text" />
+        <button type="button" class="icon-barcode button scan"> </button>
+    </div>
+</form>
+    <script type="text/javascript">
 var Quagga = window.Quagga;
 var App = {
     _scanner: null,
@@ -85,14 +95,5 @@ var App = {
 };
 App.init();
 </script>
-</head>
-<body>
-<form>
-    <div class="input-field">
-        <label for="isbn_input">EAN:</label>
-        <input id="isbn_input" class="isbn" type="text" />
-        <button type="button" class="icon-barcode button scan"> </button>
-    </div>
-</form>
 </body>
 </html>
